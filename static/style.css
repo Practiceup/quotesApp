@@ -1,0 +1,91 @@
+/* --- INDEX.HTML --- */
+.navTab {
+    background-color: crimson;
+    width: 10em;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 0.5em;
+    margin: 2em;
+}
+
+.navTab:hover {
+    box-shadow: 0 0 2px 2px grey;
+    background-color: azure;
+}
+
+.navTab a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+}
+
+.navTab a:hover {
+    color: crimson;
+}
+
+.container {
+    background-color: white;
+    margin: 2em;
+    box-shadow: 1px 1px 3px 1px rgb(50, 50, 50);
+}
+
+.favQuotes {
+    color: darkseagreen;
+    border-bottom: solid 1px darkseagreen;
+    padding: 0.2em 1em;
+    font-size: 1.2em;
+}
+
+.quoteAuthor {
+    color: crimson;
+    border-bottom: solid 1px crimson;
+    padding: 0.2em 1em;
+    font-size: 1.1em;
+}
+
+.quote {
+    color: dodgerblue;
+    border-bottom: solid 1px dodgerblue;
+    padding: 0.2em 1em;
+}
+
+.dateDiv {
+    padding: 0.2em 1em;
+}
+
+/* --- QUOTES.HTML --- */
+.form-group {
+    padding: 1em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.2em;
+    font-weight: 900;
+}
+
+.form-control {
+    padding: 0.5em 1em;
+    background-color: aliceblue;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.form-control:hover {
+    box-shadow: 0 0 3px 1px grey;
+}
+
+.btn_submit {
+    width: 30%;
+    margin: 0 35%;
+    padding: 0.5em;
+    background-color: crimson;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: whitesmoke;
+    border: none;
+}
+
+.btn_submit:hover {
+    box-shadow: 0 0 3px 1px grey;
+}

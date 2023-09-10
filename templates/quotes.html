@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quotes - Fiona</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <form action="/process" method="post">
+            <div class="form-group">
+                <label for="inputName">Quote Author</label>
+                <input type="text" name="author" id="inputName" placeholder="Add the author..." class="form-control">
+
+            </div>
+
+            <div class="form-group">
+                <label for="quote">Quote</label>
+                <textarea class="form-control" name="quote" id="quote" rows="5" placeholder="Add your quote">
+
+                </textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="today">Date</label>
+                <input type="date" class="form-control" name="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="btn_submit">
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiona DeMendonca</title>
+
+    <style>
+        body {
+            background-color: azure;
+        }
+
+        .title {
+            text-align: center;
+            color: blueviolet;
+        }
+
+        .quote {
+            font-family: cursive;
+            font-style: italic;
+        }
+
+        .no_quote {
+            color: red;
+        }
+    </style>
+    <link href="../static/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- CONDITIONAL STATEMENT WITH JINJA -->
+    <!-- {%if quote1 %}
+    <p class="quote">{{quote1}}</p>
+
+    {%else%}
+    <p class="no_quote">No variable quote here!</p>
+    {%endif%} -->
+
+    <!-- FOR LOOP WITH JINJA -->
+    <!-- {%for i in colors%}
+    <li>{{i}}</li>
+    {%endfor%} -->
+
+    <h1 class="title">Welcome to Flask App</h1>
+    <nav class="navTab">
+        <a href="{{url_for('quotes')}}">Add a quote</a>
+    </nav>
+
+    <main class="container">
+        <div class="favQuotes">
+            <p>Favorite quotes</p>
+        </div>
+
+        <!-- FOR LOOP -->
+        {%for i in result%}
+        <div class="quoteAuthor">
+            <p>{{i.author}}</p>
+        </div>
+
+        <div class="quote">
+            <p>{{i.quote}}</p>
+        </div>
+
+        <div class="dateDiv">
+            <p>Date: {{i.date}}</p>
+        </div>
+        {%endfor%}
+    </main>
+</body>
+
+</html>
