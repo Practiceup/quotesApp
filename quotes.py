@@ -6,8 +6,8 @@ import os
 
 app = Flask(__name__)
 
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+pyscopg2://postgres:password@localhost/quotes'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://gnefliss:DCGdgI6ikn5APZuAJDVwz2IyHnQIeQyT@isilo.db.elephantsql.com/gnefliss'
+
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['db_conn']
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
